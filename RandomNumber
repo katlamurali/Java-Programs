@@ -1,0 +1,16 @@
+package randomnumber;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class RandomNumber {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		Random rand =new Random();
+		int b =s.nextInt();
+		int n= rand.nextInt(b)+1;
+		System.out.println(n);
+	}
+
+}
