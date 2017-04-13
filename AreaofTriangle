@@ -1,0 +1,17 @@
+package areaofatraiangle;
+import java.util.Scanner;
+
+public class AreaofTriangle {
+	public static void main (String args[])
+	{
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter Width Of Triangle :");
+		double b=s.nextDouble();
+		System.out.println("Enter the Height Of Triangle");
+		double h=s.nextDouble();
+		double area=(b*h)/2;
+		System.out.println("Area Of Triangle : "+area);
+		
+	}
+
+}
