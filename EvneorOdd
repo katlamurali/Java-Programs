@@ -1,0 +1,21 @@
+package evenodd;
+
+import java.util.Scanner;
+
+public class EvenorOdd {
+
+	public static void main(String[] args) 
+	{
+	
+		int num;
+		System.out.println("Enter the Number :");
+		Scanner scan =new Scanner(System.in);
+		num = scan.nextInt();
+				
+		if (num % 2 == 0)
+			System.out.println("Number Is Even ");
+		else
+			System.out.println("Number Is Odd ");
+	}
+
+}
