@@ -1,0 +1,18 @@
+package comparestrings;
+
+import java.util.Scanner;
+
+public class CompareStrings {
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter The String S1 & S2");
+		String s1=sc.next();
+		String s2=sc.next();
+		if(s1.equals(s2))
+			System.out.println("True");
+		else
+			System.out.println("False");
+		sc.close();
+	}
+
+}
