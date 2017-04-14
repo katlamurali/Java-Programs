@@ -1,0 +1,20 @@
+package removecharinstring;
+
+import java.util.Scanner;
+
+public class RemoveCharInString {
+
+	public static void main(String[] args) {
+		
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter The String :");
+		String str = sc.nextLine();
+		System.out.println("Ans : " + removeCharAt(str,6));
+		sc.close();
+		
+	}
+	public static String removeCharAt(String s, int pos){
+		return s.substring(0,pos) + s.substring(pos + 1);
+	}
+
+}
