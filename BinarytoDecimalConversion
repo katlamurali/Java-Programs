@@ -1,0 +1,15 @@
+package binarytodecimalconv;
+
+import java.util.Scanner;
+
+public class BinarotoDecimalConv {
+
+	public static void main(String[] args) {
+		Scanner in =new Scanner(System.in);
+		System.out.println("Enter a Binary Number");
+		String binaryString = in.nextLine();
+		System.out.println("Result " +Integer.parseInt(binaryString,2));
+
+	}
+
+}
