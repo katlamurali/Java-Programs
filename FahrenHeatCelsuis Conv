@@ -1,0 +1,27 @@
+package fahrenheatcelsius;
+
+import java.util.Scanner;
+
+public class FahrenHeatCelsius {
+
+	public static void main(String[] args) {
+		FahrenHeatCelsius obj = new FahrenHeatCelsius();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter The FahrenHeat Value : ");
+		double d=sc.nextDouble();
+		System.out.println("FahrenHeatToCelsius is : " + obj.FahrenHeatToCelsius(d));
+		System.out.println("CelsiusToFahrenHeat is : " + CelsiusToFahrenHeat(d));
+		System.out.println();
+		
+
+	}
+	public static double CelsiusToFahrenHeat(double degree_c){
+		double fahrenheitResult = (9*(degree_c)/5)+32;
+		return fahrenheitResult;
+	}
+	public double FahrenHeatToCelsius(double degree_f){
+		double celsiusResult = (5*(degree_f - 32)/9);
+		return celsiusResult;
+	}
+
+}
