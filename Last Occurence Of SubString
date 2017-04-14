@@ -1,0 +1,14 @@
+package lastoccurenceofsubstring;
+
+public class LastOccurenceOfSubString {
+
+	public static void main(String[] args) {
+		String s = "MuraliKrishnaKatla";
+		String s1 = s.substring(4);
+		String s2 = s1.substring(4);
+		System.out.println(s.lastIndexOf(s2,4));
+	
+
+	}
+
+}
