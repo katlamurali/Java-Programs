@@ -1,1 +1,24 @@
+package com.iitjobs.JDBC;
 
+import java.util.Arrays;
+
+public class ArrayRotation {
+
+	public static void main(String[] args) {
+		int arr[]= {1,2,3,4,5,6,7,8,9};
+	int b=5;
+	reverse(arr,0,b-1);
+	reverse(arr,b,arr.length-1);
+	reverse(arr,0,arr.length-1);
+	System.out.println(Arrays.toString(arr));
+	
+	}
+	static void reverse(int [] nums,int x,int y) {
+		for(int i=x;i<=(x+y)/2;i++) {
+			int temp=nums[i];
+			nums[i]=nums[(x+y)-i];
+			nums[(x+y)-i]=temp;
+			
+		}
+	}
+}
